@@ -8,14 +8,14 @@ Convert tabular data into heatmap images and train a CNN for classification with
 
 ## ✨ Features
 
--> Convert tabular data to 32×32 heatmap images
--> Advanced CNN with 3 convolutional blocks
--> Data augmentation & learning rate decay
--> Real-world testing with Iris dataset (150 samples)
--> 85-95% accuracy on test data
--> 25 comprehensive unit tests
+✅ Convert tabular data to 32×32 heatmap images
+✅ Advanced CNN with 3 convolutional blocks
+✅ Data augmentation & learning rate decay
+✅ Real-world testing with Iris dataset (150 samples)
+✅ 85-95% accuracy on test data
+✅ 25 comprehensive unit tests
 
-## Quick Start
+## 🚀 Quick Start
 
 ### Install
 ```bash
@@ -60,28 +60,15 @@ python test_main.py
 | Image Size | 32×32 pixels |
 
 ## 🔧 How It Works
-
-## 💻 CNN Architecture
-
-- Input: 32×32×1 image
-- Conv2D(128) + BatchNorm + MaxPool
-- Conv2D(256) + BatchNorm + MaxPool
-- Conv2D(512) + BatchNorm + MaxPool
-- Dense(512) → Dense(256) → Dense(128) → Output
-
-## 📈 Usage Examples
-
-### With Real Data
-```bash
-python main.py iris.csv
-# Output: 90% accuracy
-```
-
-### Custom CSV File
-```bash
-python main.py your_data.csv
-# CSV format: Features..., Label (last column)
-```
+Tabular Data (CSV)
+        ↓
+Remove Outliers & Normalize
+        ↓
+Convert to Heatmap Images
+        ↓
+Train Advanced CNN
+        ↓
+Get Predictions (85-95% Accuracy!)
 
 ### Synthetic Data
 ```bash
@@ -91,76 +78,34 @@ python main.py
 
 ## 🌐 Technology Stack
 
-- "Python" 3.12.1
-- "TensorFlow" 2.21 (Deep Learning)
-- "Keras" 3.14 (Neural Networks)
-- "NumPy, Pandas" (Data Processing)
-- "Scikit-learn" (Preprocessing)
-- "Matplotlib" (Visualization)
+- **Python** 3.12.1
+- **TensorFlow** 2.21 (Deep Learning)
+- **Keras** 3.14 (Neural Networks)
+- **NumPy, Pandas** (Data Processing)
+- **Scikit-learn** (Preprocessing)
+- **Matplotlib** (Visualization)
 
-##  GitHub Deployment
+## 📤 GitHub Deployment
 
-"""bash
+```bash
 git init
 git add .
 git commit -m "Initial commit: Heatmap+CNN model v3.0"
-git remote add origin https://github.com/bismajamil/Tabular_to_Heatmap_cnn
+git remote add origin https://github.com/bismajamil/Tabular_to_Heatmap_cnn.git
 git push -u origin main
-"""
+```
+## 📋 Key Improvements (v3.0)
 
-## 🐛 Troubleshooting
-
-### Module Not Found
-"""bash
-pip install -r requirements.txt
-"""
-
-### Low Accuracy
-Use real data: `python main.py iris.csv`
-
-### CSV Not Found
-Ensure CSV is in same directory or use full path
-
-### Memory Error
-"""python
-# Reduce batch size in main.py
-Config.BATCH_SIZE = 4  # Default: 8
-"""
-
-## CSV Format
-
-Required format for custom data:
-"""csv
-Feature1,Feature2,Feature3,...,Target
-0.5,1.2,3.4,...,0
-1.2,2.3,4.5,...,1
-"""
-- Last column = Target/Label (0 or 1)
-- All other columns = Features
-- Headers in first row
-
-## What You Get
-
--> Trained model (.h5 file)
--> Heatmap visualizations (PNG)
--> Training curves & graphs
--> 90%+ accuracy on real data
--> Production-ready code
--> Full documentation
-
-##  Key Improvements (v3.0)
-
--> Larger images (32×32 instead of 28×28)
--> Advanced preprocessing (outlier removal)
--> Better CNN (3 Conv blocks, 512 filters)
--> Data augmentation
--> Learning rate decay
--> Batch normalization
--> "Accuracy: 85-95%" (up from 60-70%)
+✅ Larger images (32×32 instead of 28×28)
+✅ Advanced preprocessing (outlier removal)
+✅ Better CNN (3 Conv blocks, 512 filters)
+✅ Data augmentation
+✅ Learning rate decay
+✅ Batch normalization
+✅ **Accuracy: 85-95%** (up from 60-70%)
 
 
 **Version:** 3.0.0 (Ultra-Improved)
 **Status:** Production Ready 
-**Last Updated:** June 2024
 
 Made with ❤️ for Data Science & AI Education
